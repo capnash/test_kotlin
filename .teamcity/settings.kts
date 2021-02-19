@@ -8,7 +8,7 @@ object HelloWorld: BuildType({
 name = "Hello world"
 steps {
 script {
-scriptContent = "echo 'Hello world!'"
+scriptContent = "echo 'Hello Steve!'"
 }
 }
 })
