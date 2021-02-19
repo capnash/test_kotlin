@@ -44,7 +44,7 @@ object HelloWorld : BuildType({
 
     steps {
         script {
-            scriptContent = """echo "Hello World""""
+            scriptContent = """echo "Hello Steve""""
         }
     }
 
