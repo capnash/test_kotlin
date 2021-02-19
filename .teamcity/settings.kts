@@ -38,29 +38,11 @@ project {
 object HelloWorld : BuildType({
     name = "Hello World"
 
-    vcs {
-        root(HttpsGithubComCapnashDevopstestGit)
-    }
-
     steps {
         script {
-            scriptContent = """echo "Hello Steve""""
+            scriptContent = "echo 'Hello Steve'"
         }
     }
 
-    triggers {
-        vcs {
-            branchFilter = ""
-        }
-    }
 })
 
-object HttpsGithubComCapnashDevopstestGit : GitVcsRoot({
-    name = "https://github.com/capnash/devopstest.git"
-    url = "https://github.com/capnash/devopstest.git"
-    branch = "refs/heads/main"
-    authMethod = password {
-        userName = "capnash"
-        password = "credentialsJSON:67a0acf4-b343-4c84-9f11-e86a0ec21eac"
-    }
-})
